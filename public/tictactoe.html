@@ -1,0 +1,82 @@
+<!--
+This code is written by Rayaan Ahmed
+contact : raybox94@gmail.com
+
+
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tictactoe</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+
+ 
+    <div class="container">
+    
+        <nav class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="container nav-bar-color">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="nav-text-color" style="text-decoration: none;" href="index.html" ><i><h4 style="margin-top:15px;" class="raybox">Happo</h4></i></a>  
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav" >
+                        <li> <a href="index.html" class="nav-text-color">Home</a></li>
+                        <li>
+                            <a href="tictactoe.html" class="nav-text-color">Game</a>
+                        </li>
+                        <li>
+                            <a href="contactus.html" class="nav-text-color">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+<div class="container">
+<div class="row">
+  <div class="col-md-4" id="position">
+  <a href="tictactoe1.html" style="text-decoration: none;"> <div class="convert">  Player-1 VS Player-2    </div></a> 
+<a href="tictactoe.html" style="text-decoration: none;">  <div class="convert"> Player-1 VS Computer   </div></a>
+
+  </div>
+  <div class="col-md-4">
+  <div class="grid-size top-left" id="top-left" onclick="top_left()"><h1 class="top-left-text h1" id="top-left-text"></h1></div>
+  <div class="grid-size top-center" id="top-center" onclick="top_center()"><h1 class="top-center-text h1" id="top-center-text"></h1></div>
+  <div class="grid-size top-right" id="top-right" onclick="top_right()"><h1 class="top-right-text h1" id="top-right-text"></h1></div>
+  <div class="grid-size middle-left" id="middle-left" onclick="middle_left()"><h1 class="middle-left-text h1" id="middle-left-text"></h1></div>
+  <div class="grid-size middle-center" id="middle-center" onclick="middle_center()"><h1 class="middle-center-text h1" id="middle-center-text"></h1></div>
+  <div class="grid-size middle-right" id="middle-right" onclick="middle_right()"><h1 class="middle-right-text h1" id="middle-right-text"></h1></div>
+  <div class="grid-size bottom-left" id="bottom-left" onclick="bottom_left()"><h1 class="bottom-left-text h1" id="bottom-left-text"></h1></div>
+  <div class="grid-size bottom-center" id="bottom-center" onclick="bottom_center()"><h1 class="bottom-center-text h1" id="bottom-center-text"></h1></div>
+  <div class="grid-size bottom-right" id="bottom-right" onclick="bottom_right()"><h1 class="bottom-right-text h1" id="bottom-right-text"></h1></div>
+</div>
+  <div class="col-md-4"></div>
+</div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="tictaktoe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* this code is written by Rayaan Ahmed
+   contact: rayox94@gmail.com
+   */
+
+
+
+.body{background-image:url("images/img2.jpg");padding:100px 0px 0px 0px;}
+.header{background: #0ba3ff;border:none;color:#fff;}
+.grid-size{width:100px;height:100px;background:#fff;margin:5px 5px 5px 5px;float:left;box-shadow: 5px 10px 8px rgb(98, 95, 95);}
+.grid-size:hover{box-shadow: none;transition: 2s ease; cursor: pointer;}
+.h1{color:#0acbf4;text-align:center;margin-top:24px; }
+.convert{text-align: center;width:50%;height:50px;background:#fff;box-shadow: 5px 10px 8px rgb(95, 90, 90);margin-bottom:10px;padding:12px;}
+.convert:hover{box-shadow: none;transition: 2s ease; }
+.navbar-inverse{background:none;border:0px;}
+.background{background-image:url("images/img2.jpg");height:100%;background-attachment:fixed;background-position: center;background-size:cover;}
+.nav-text-color{color:#fff;}
+#img{padding-top:10em;text-align: center;}
+#profile-image{width:60%;height:40%;box-shadow: 1px 1px 18px #000;}
+#profile-image:hover{box-shadow: none;transition: 2s ease-in-out;}
+h3{padding-top:60px;color:#fff;}
+h4{color:#fff;margin:0px;padding:0px;}
+.scroll{width:30px;height:50px;}
+
+.second-background{background-image:url("images/img3.jpg");height:100%;background-attachment:fixed;background-position: center;background-size:cover;}
+.third-background{background-image:url("images/img4.png");height:100%;background-attachment:fixed;background-position: center;background-size:cover;}
+.fourth-background{background-image:url("images/img5.jpeg");height:100%;background-attachment:fixed;background-position: center;background-size:cover;}
+.present{margin-top: 15em;color:#fff;text-align:center;border:8px solid #fff;padding:10px;}
+p{text-align: justify;}
+.ray{text-align: center;}
+#background{background-image:url("images/img2.jpg");padding:100px 0px 0px 0px;}
+#position{text-align:center;}
+
+@media(max-width:720px){
+.raybox{margin:15px 0px 0px 12px;}
+
+}
