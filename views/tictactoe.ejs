@@ -1,0 +1,31 @@
+<!--
+This code is written by Rayaan Ahmed
+contact : raybox94@gmail.com
+
+
+-->
+
+<%
+include header
+%>
+<style>
+body{background-image:url("../images/img2.jpg");padding:100px 0px 0px 0px;}
+</style>
+<div class="container" >
+<div class="row">
+  <div class="col-md-4" id="position">
+  <a href="/tictactoe1" style="text-decoration: none;"> <div class="convert">  Player-1 VS Player-2    </div></a> 
+<a href="/tictactoe" style="text-decoration: none;">  <div class="convert"> Player-1 VS Computer   </div></a>
+
+  </div>
+
+  <% include tictactoebody %>
+  <div class="col-md-4"></div>
+</div>
+
+  </div>
+  
+  <script src="js/tictaktoe.js"></script>
+<%
+include footer
+%>

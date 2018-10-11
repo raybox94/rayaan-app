@@ -1,0 +1,25 @@
+{
+    "name": "rayaan-app",
+    "version": "0.0.1",
+    "description": "Resume website",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "latest",
+        "morgan": "latest",
+        "body-parser": "latest",
+        "ejs": "latest",
+        "nodemailer": "latest",
+        "nodemailer-mailgun-transport": "latest",
+        "nconf": "latest"
+    },
+    "author": "Rayaan Ahmed",
+    "homepage": "https://github.com/raybox94/rayaan-app",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/raybox94/rayaan-app"
+    },
+    "license": "Apache-2.0"
+}

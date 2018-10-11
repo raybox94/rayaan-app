@@ -1,0 +1,42 @@
+
+<!--
+This code is written by Rayaan Ahmed
+contact : raybox94@gmail.com
+
+
+-->
+<%
+include header
+%>
+<style>
+    body{background-image:url("../images/img2.jpg");padding:100px 0px 0px 0px;}
+    </style>
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-4" style="text-align:center;">
+<h3>Contact Us</h3>
+<form action="/contactus" method="post" onsubmit="clicked()">
+<input type="text" name="name" placeholder="Enter your name" class="form-control"  required id="name"/><br>
+<input type="email" name="email" placeholder="Enter your Email Id" class="form-control"  required id="email"/><br>
+<textarea placeholder="Ask a question" class="form-control"  required id="question" name="question"></textarea><br>
+<input type="submit" value="submit" class="btn btn-success" Style="background:#7e7e7e;"/>
+</form>
+
+<div style="margin-top:40px;">
+<a href="https://github.com/raybox94" target="_blank"><img src="images/git.png" alt="Git Link" style="width:45px;height:45px;margin-right:10px;"/></a>
+<a href="https://bitbucket.org/raybox94/" target="_blank"><img src="images/bitbucket.png" alt="BitBucket Link" style="width:45px;height:45px;margin-right:10px;"/></a>
+<a href="https://www.linkedin.com/in/rayaan-ahmed-3b1008113/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Link" style="width:50px;height:50px;"/></a>
+<a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook Link" style="width:60px;height:60px;"/></a>
+</div>
+
+
+</div>
+<div class="col-md-4"></div>
+</div>
+</div>
+<script src="js/contactus.js" ></script>
+<%
+include footer
+%>
