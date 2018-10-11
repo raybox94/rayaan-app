@@ -28,13 +28,6 @@ var accessLogStream = fs.createWriteStream(path.join(__dirname, logfile), { flag
 app.use(logger('dev'))
 app.use(logger('combined', { stream: accessLogStream }))
 
-if (process.env.NODE_ENV === 'production') {
-  app.get('*', function (req, res, next) {
-  if (req.headers['x-forwarded-proto'] != 'https') {
-    res.redirect('https://resumesite563.herokuapp.com/' + req.url)
-  } else { next() }
-})
-}
 
 
 app.get('/', function (req, res) {
