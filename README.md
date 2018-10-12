@@ -53,10 +53,6 @@ Open browser `http://localhost:8081`.
 1. Open Git Bash in your project folder, add the heroku remote (Command 1 below).
 1. In Git Bash, push to your heroku remote (Command 2 below).
 
-```Bash
-git remote add heroku https://git.heroku.com/resumesite563.git
-git push heroku master
-```
 
 ## References
 
