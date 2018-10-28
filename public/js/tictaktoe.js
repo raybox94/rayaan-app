@@ -1943,17 +1943,6 @@ if(avai[0] === 1)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 //game user win statement
  if(user.length >= 3)
  {
@@ -2056,6 +2045,8 @@ if(com.length>=3)
 		clear();
 
 	}//end of game 
+
+	return 0;
 }//end of ai function
 
 
@@ -2064,5 +2055,4 @@ if(com.length>=3)
 function clear()
 {
 location.reload();
-
 } //end of game start

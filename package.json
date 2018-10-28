@@ -7,13 +7,15 @@
         "start": "node app.js"
     },
     "dependencies": {
+        "body-parser": "latest",
+        "cool-ascii-faces": "^1.3.4",
+        "ejs": "latest",
         "express": "latest",
         "morgan": "latest",
-        "body-parser": "latest",
-        "ejs": "latest",
+        "nconf": "latest",
         "nodemailer": "latest",
-        "nodemailer-mailgun-transport": "latest",
-        "nconf": "latest"
+        "mailgun-js": "latest",
+        "nodemailer-mailgun-transport": "latest"
     },
     "author": "Rayaan Ahmed",
     "homepage": "https://github.com/raybox94/rayaan-app",

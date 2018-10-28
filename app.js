@@ -51,43 +51,25 @@ app.get('/tictactoe1', function (req, res) {
 
 
 app.post('/contactus', function (req, res) {
-  const name = req.body.name
-  const email = req.body.email
-  const question = req.body.question
-  const isError = false
+  var api_key = 'fd72c81de9e18127772c104636038cad-4836d8f5-2e2b29ef';
+  var domain = 'sandbox28b7975f523f4a3dbf743a36d9b3bf73.mailgun.org';
+  var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+   
+  var data = {
+    from: 'Rayaan Ahmed <postmaster@sandbox28b7975f523f4a3dbf743a36d9b3bf73.mailgun.org>',
+    to: 'raybox94@gmail.com',
+    subject: req.body.name,
+    text: req.body.email + req.body.question
+  };
+   
+  mailgun.messages().send(data, function (error, body) {
+    console.log(body);
+      if(!error)
+      res.sendStatus("mail-sent");
+      else
+      res.send("error sending mail");
 
-  // logs to the terminal window (not the browser)
-  const s = '\nCONTACT FORM DATA: ' + name + ' ' + email + ' ' + question+  '\n'
-  console.log(s)
-
-  const mailOptions = {
-    from: 'Rayaan Ahmed <raybox94@gmail.com>', // sender address
-    to: 's534118@nwmissouri.edu, raybox94@gmail.com', // list of receivers
-    subject: 'Message from Website Contact page', // Subject line
-    text: s,
-    err: isError
-  }
-
-  try {
-    const auth = require('./config.json')
-    // create transporter object capable of sending email using the default SMTP transport
-    const transporter = nodemailer.createTransport(mg(auth))
-
-    transporter.sendMail(mailOptions, function (error, info) {
-      if (error) {
-        console.log('\nERROR: ' + error + '\n')
-        res.render('contact-error.ejs')
-      } else {
-        console.log('Sending email...')
-        if (info) { console.log('\nres SENT: ' + info.res + '\n') }
-        res.render('contact-confirm.ejs')
-      }
-    })
-  }
-  catch (e) {
-    console.log(e.message)
-    res.render('contact-error.ejs')
-  }
+  });
 })
 
 app.get(function (req, res) {
