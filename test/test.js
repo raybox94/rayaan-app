@@ -35,3 +35,8 @@ QUnit.test('Testing AI function with String', function (assert) {
 
     assert.throws(function () { ai('a'); }, /The given argument is not a number/, 'Passing in a string correctly raises an Error');
 });
+
+QUnit.test('Testing AI function with No Arguments', function (assert) {
+
+    assert.throws(function () { ai(); }, /The given argument is not a number/, 'no Argument method check');
+});
