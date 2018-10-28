@@ -65,9 +65,9 @@ app.post('/contactus', function (req, res) {
   mailgun.messages().send(data, function (error, body) {
     console.log(body);
       if(!error)
-      res.render('contact-confirm.ejs');
+      res.send('sent');
       else
-      res.render('contact-error.ejs');
+      res.send('error');
 
   });
 })
