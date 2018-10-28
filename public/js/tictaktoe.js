@@ -252,6 +252,14 @@ function bottom_right()
 function ai(tile)
 {
 
+	//if title is a string throws an exception
+
+	if (typeof tile !== 'number') {
+		throw Error('The given argument is not a number');
+	}
+
+
+
 //single click of user
   if(tile !== 5 && count === 1)
   {

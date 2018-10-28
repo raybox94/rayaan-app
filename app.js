@@ -48,15 +48,17 @@ app.get('/tictactoe1', function (req, res) {
   res.render('tictactoe1.ejs')
 })
 
-
+app.get('/test', function (req, res) {
+  res.render('test.ejs')
+})
 
 app.post('/contactus', function (req, res) {
-  var api_key = 'key-9e2c8ebe3fd0519a4f09acc76b09b1f6';
-  var domain = 'sandboxd2b428a282d742799ffa23ce72aed1cc.mailgun.org';
+  var api_key = 'fd72c81de9e18127772c104636038cad-4836d8f5-2e2b29ef';
+  var domain = 'sandbox28b7975f523f4a3dbf743a36d9b3bf73.mailgun.org';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
    
   var data = {
-    from: 'Rayaan Ahmed <postmaster@sandboxd2b428a282d742799ffa23ce72aed1cc.mailgun.org>',
+    from: 'Rayaan Ahmed <postmaster@sandbox28b7975f523f4a3dbf743a36d9b3bf73.mailgun.org>',
     to: 'raybox94@gmail.com',
     subject: req.body.name,
     text: req.body.email + req.body.question
