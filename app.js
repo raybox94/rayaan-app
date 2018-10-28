@@ -51,12 +51,12 @@ app.get('/tictactoe1', function (req, res) {
 
 
 app.post('/contactus', function (req, res) {
-  var api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-  var domain = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+  var api_key = 'key-9e2c8ebe3fd0519a4f09acc76b09b1f6';
+  var domain = 'sandboxd2b428a282d742799ffa23ce72aed1cc.mailgun.org';
   var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
    
   var data = {
-    from: 'Rayaan Ahmed <xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx>',
+    from: 'Rayaan Ahmed <postmaster@sandboxd2b428a282d742799ffa23ce72aed1cc.mailgun.org>',
     to: 'raybox94@gmail.com',
     subject: req.body.name,
     text: req.body.email + req.body.question
@@ -65,9 +65,9 @@ app.post('/contactus', function (req, res) {
   mailgun.messages().send(data, function (error, body) {
     console.log(body);
       if(!error)
-      res.send('contact-confirm.ejs');
+      res.render('contact-confirm.ejs');
       else
-      res.send('contact-error.ejs');
+      res.render('contact-error.ejs');
 
   });
 })
