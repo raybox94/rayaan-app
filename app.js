@@ -48,9 +48,6 @@ app.get('/tictactoe1', function (req, res) {
   res.render('tictactoe1.ejs')
 })
 
-app.get('/test', function (req, res) {
-  res.render('test.ejs')
-})
 
 app.post('/contactus', function (req, res) {
   var api_key = 'fd72c81de9e18127772c104636038cad-4836d8f5-2e2b29ef';
